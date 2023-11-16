@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <script src="../aframe/aframe-master.min.js"></script>
+    <script src="../aframe/aframe-ar-nft.js"></script>
+    <script src="./jQuery.min.js"></script>
+    <script src="../changemodel/process.js"></script>
+  </head>
+
+
+  <body>
+    <a-scene vr-mode-ui="enabled: false;">
+      <a-entity camera="fov: 190" id="camera"></a-entity>
+      <!--线段-->
+      <!--a-entity flow-curve></a-entity>
+      <a-entity arc-curve></a-entity>
+      <a-entity  type = "line" arline="start: -3 0 -5; end: 0 0 -5; color: #ff0000;" ></a-entity-->
+      
+    </a-scene>
+  
+    <!--加载nft文件-->
+    <script src="./form_nft.js"></script>
+
+    <script>
+      // 在 form_nft.js 加载完毕后再加载和执行 form_model.js
+      window.addEventListener('load', function() {
+        var script = document.createElement('script');
+        script.src = './form_model.js';
+        document.head.appendChild(script);
+      });
+    </script>
+
+  </body>
+  
+  
+</html>

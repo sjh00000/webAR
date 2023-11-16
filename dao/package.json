@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "array": "^0.4.3",
+    "mysql": "^2.18.1"
+  }
+}
