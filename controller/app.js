@@ -70,7 +70,7 @@ app.get('/*', (req, res) => {
 
 app.listen(port, () => {
   console.log(`http://localhost:5501/view/ar.html`)
-  console.log('http://192.168.45.91:5501/view/index.html')
+  console.log('http://47.115.203.81:5501/view/index.html')
 });
 
 
