@@ -69,7 +69,8 @@ app.get('/*', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`http://localhost:5501/view/ar.html`)
+  console.log(`http://localhost:5501/aframe/ar.html`)
+  console.log(`http://127.0.0.1:5501/view/index.html`)
   console.log('http://47.115.203.81:5501/view/index.html')
 });
 
