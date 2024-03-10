@@ -7,6 +7,7 @@ const connect=require('../dao/connect_sql')
 //连接数据库
 connect.connection
 const port = 5501
+const port2 = 5500
 
 //查找nft数据
 app.get('/getdata/nftdata', function(req, res) {
